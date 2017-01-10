@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.daniel.hao.activity"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        // dex突破65535的限制，分包限制
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+tasks.withType(java.lang.Compiler) {
+    options.encoding = "UTF-8";
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile project(':extras:corelib')
+
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+}

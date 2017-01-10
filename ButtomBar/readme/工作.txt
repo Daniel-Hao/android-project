@@ -1,0 +1,7 @@
+1,日志
+done:日志集成完成
+a,error等级的日志默认保存txt，小于error等级，需要配置
+b,crash日志保存到txt
+todo:需要上传服务器
+
+2,

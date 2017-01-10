@@ -1,0 +1,55 @@
+
+###########################主项目#############################################
+
+1,activity包(一般使用mvp框架)
+activity,fragment,adapter
+
+2,app包
+application
+
+3,base包
+基类
+
+4,entity包
+javabean实体类
+
+5,final包
+配置类
+
+6,utils包
+工具类
+
+7,service
+服务类
+
+###########################依赖项目#############################################
+
+extras文件夹
+1,corelib项目（避免主项目资源文件太多）
+view包:自定义等等一些view
+log包:
+
+
+
+############################jar文件############################################
+
+compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+compile "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
+compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+compile "com.android.support:design:${rootProject.ext.supportLibVersion}"
+compile files('libs/log4j-1.2.17.jar')
+compile 'com.android.support:multidex:1.0.0'
+compile 'com.android.support:support-v4:23.4.0'
+compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+
+
+
+############################项目网站############################################
+1，云测
+2，梆梆加固
+3，禅道
+4，
+
+
+
+

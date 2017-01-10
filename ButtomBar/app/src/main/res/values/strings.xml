@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ButtomBar</string>
+
+    <!-- main -->
+    <string name="a">精选</string>
+    <string name="b">视频</string>
+    <string name="c">搜索</string>
+    <string name="d">资讯</string>
+    <string name="e">我的</string>
+
+</resources>
